@@ -50,3 +50,8 @@ while current not in prev_state:
     cycle = cycle + 1
 
 prev_state.append(current)
+
+# Part Two
+
+'''Solution for part two is the same code,
+but use the output of part 1 as input.'''
