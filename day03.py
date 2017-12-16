@@ -1,4 +1,4 @@
-'''Advent of Code Day 2'''
+'''Advent of Code Day 3'''
 
 # Part One
 '''Needed hints and clues from message boards, started to

@@ -31,7 +31,7 @@ for key in input:
 print(severity)
 
 # Part Two
-#%%writefile day13.py
+
 
 '''Advent of Code Day 13'''
 
@@ -73,4 +73,3 @@ while severity:
 
 
 print(severity, delay)
-d_input
