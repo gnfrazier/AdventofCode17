@@ -13,17 +13,17 @@ def down(x, y):
     if dgram[y][x] == '|':
         return (x, y + 1)
     elif dgram[y][x] == '+':
-        print('turn')
+
         try:
             if dgram[y][x + 1] != ' ':
-                print('right')
+
                 d[0] = 'r'
                 return (x + 1, y)
         except:
             print('edge')
         try:
             if dgram[y][x - 1] != ' ':
-                print('left')
+
                 d[0] = 'l'
                 return (x - 1, y)
         except:
@@ -104,10 +104,10 @@ menu = {'d': down,
         'l': left,
         'r': right,
         }
-
+steps = 1
 while dgram[b[1]][b[0]] != 'S':
     b = menu[d[0]](b[0], b[1])
-    print(b, d)
+    steps += 1
 
 crumb.append(dgram[b[1]][b[0]])
 end = []
@@ -115,4 +115,4 @@ for i in crumb[1:]:
     if (i != '-') and (i != '|'):
         end.append(i)
 output = ''.join(end)
-output
+print(output, steps)
